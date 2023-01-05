@@ -14,7 +14,12 @@ const storeImages: string = './images/thumb';
    const width: Image = req.query.width as string | number;
    const height: Image = req.query.height as string | number;
    const filename: Image = req.query.filename as string;
-   const thumbDir: string = path.join(__dirname, `${storeImages}`, `${filename}`, `/${width}x${height}.jpg`)
+   const thumbDir: string = path.join(
+    __dirname,
+    `${storeImages}`,
+    `${filename}_${width}x${height}.jpg`
+  ) as string;
+
    const imageDir: string = path.join(__dirname, `${Images}`, `${filename}.jpg`)
     
      try {
