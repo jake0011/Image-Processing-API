@@ -1,11 +1,20 @@
 {
+  "name": "image-resizer",
   "devDependencies": {
+    "@types/eslint": "^8.4.10",
+    "@types/express": "^4.17.15",
     "@types/jasmine": "^4.3.1",
     "@types/node": "^18.11.18",
+    "@types/prettier": "^2.7.2",
+    "@types/sharp": "^0.31.1",
+    "@types/supertest": "^2.0.12",
+    "@typescript-eslint/eslint-plugin": "^5.48.0",
+    "@typescript-eslint/parser": "^5.48.0",
+    "eslint": "^8.31.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
-    "ts-node": "^10.9.1", 
-    "type": "module"
+    "supertest": "^6.3.3",
+    "ts-node": "^10.9.1"
   },
   "scripts": {
     "build": "npx tsc",
@@ -16,13 +25,6 @@
     "prettier": "prettier --config .prettierrc \"src/**/*.ts\" \"**/*.js\" --write"
   },
   "dependencies": {
-    "@types/eslint": "^8.4.10",
-    "@types/express": "^4.17.15",
-    "@types/prettier": "^2.7.2",
-    "@types/sharp": "^0.31.1",
-    "@typescript-eslint/eslint-plugin": "^5.48.0",
-    "@typescript-eslint/parser": "^5.48.0",
-    "eslint": "^8.31.0",
     "express": "^4.18.2",
     "jasmine": "^4.5.0",
     "jasmine-spec-reporter": "^7.0.0",
